@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>First Floor</title>
+    <script src="j1.js"></script>
+    <script src="main1.js"></script>
+	<link rel="stylesheet" type="text/css" href="Class.css">
+  </head>
+  <style>
+.preloader{
+	position:fixed;
+	top:200px;
+	left:400px;
+	bottom:400px;
+	right:600px;
+	background:#fff;
+	z-index:99999;
+	border:16px solid #f3f3f3;
+	border-radius:50%;
+	border-top:16px solid blue;
+	border-right:16px solid green;
+	border-bottom:16px solid red;
+	width:120px;
+	height:120px;
+	-webkit-animation:spin 2s linear infinite;
+	animation:spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+	
+	0%{ -webkit-transform:
+	rotate(0deg);}
+	100%{ -webkit-transform:
+	rotate(360deg);}
+}
+@keyframes spin{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+
+</style>
+
+  
+  <body>
+  
+ <div class="preloader"></div>
+    <table class="style1">
+      <tr>
+        <td>
+          <div id="first-section">
+            <p>classroom</p>
+          </div>
+          <div id="second-section">
+            <p>classroom</p>
+          </div>
+          <div id="third-section">
+            <p>classroom</p>
+          </div>
+          <div id="fourth-section">
+            <p>stairs</p>
+          </div>
+          <div id="fifth-section">
+            <p>washroom</p>
+          </div>
+          <div id="sixth-section">
+            <p>staff
+              room
+            </p>
+          </div>
+        </td>
+        <td>
+          <div id="middle-section">
+            <p></p>
+          </div>
+        </td>
+        <td>
+          <div id="first1-section">
+            <p>classroom</p>
+          </div>
+          <div id="second1-section">
+            <p>classroom</p>
+          </div>
+          <div id="third1-section">
+            <p>Lab</p>
+          </div>
+          <div id="fourth1-section">
+            <p> Open
+              Space
+            </p>
+          </div>
+          <div id="fifth1-section">
+            <p> Conference
+              Room
+            </p>
+          </div>
+          <div id="space-section">
+            <p> Default Notice</p>
+          </div>
+          <div id="middle1-section">
+            <p></p>
+          </div>
+          <div id="below-section">
+            <p></p>
+          </div>
+          <div id="last-section">
+            <p><a href="secondfloor.html" style="text-decoration:none; color:#ffffff;">Stairs</a></p>
+          </div>
+          <div id="End-section">
+            <p> Examination
+              Section
+            </p>
+          </div>
+          <div id="Lab-section">
+          <p> Academic
+            Section
+          </p>
+          <div id="middle2-section">
+            <p style="color:black;font-size:20px;text-align:center"><b></b>
+            </p>
+			<div id="dynamicDisplay">
+				<h2>Academic Section Active time: 10:00 AM to 04:00PM</h2>
+				<h4>CLICK ON CONFERENCE HALL , CLASSROOM , EXAMINATION SECTION BLOCK TO CHECK THE TIMIMG</h4>
+				
+			</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <button type="button" 
+      style="position:absolute;left:450px;top:220px;"
+      onclick="document.getElementById('display').innerHTML=Date()">
+    Click to check LIVE DATE and TIME</button>
+    <div style="position:absolute;left:450px;top:240px;">
+      <p style="color:black" id="display"></p>
+    </div>
+  </body>
+</html>
